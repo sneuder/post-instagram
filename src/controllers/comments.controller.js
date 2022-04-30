@@ -5,6 +5,7 @@ export default () => {
     JSON.parse(window.localStorage.getItem("comments-instagram-app")) || [];
 
   const root = document.querySelector("#comments");
+  root.innerHTML = '';
 
   if (localComments.length === 0) return;
 
