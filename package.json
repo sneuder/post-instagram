@@ -1,0 +1,24 @@
+{
+  "name": "post-instagram",
+  "version": "1.0.0",
+  "description": "Development of an Instagram post where user has some photos and he or she can make comments about it. Besides, user has the possibility to click on like button.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneuder/post-instagram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sneuder/post-instagram/issues"
+  },
+  "homepage": "https://github.com/sneuder/post-instagram#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
