@@ -1,4 +1,5 @@
 import showComments from '../controllers/comments.controller.js';
+import getUser from '../utils/user.js';
 
 export default () => {
   const form = document.querySelector(".postComment");
@@ -9,10 +10,13 @@ export default () => {
     const comment = e.target[0].value;
     e.target[0].value = '';
 
-    let localComments = JSON.parse(localStorage.getItem("comments-instagram-app")) || [];
-    localComments.push({ name: "sss", text: comment });
-    localStorage.setItem("comments-instagram-app", JSON.stringify(localComments));
-
-    showComments();
+    getUser().then(info => {
+      let localComments = JSON.parse(localStorage.getItem("comments-instagram-app")) || [];
+      localComments.push({ name: `${info.name.first} ${info.name.last}`, text: comment });
+      localStorage.setItem("comments-instagram-app", JSON.stringify(localComments));
+  
+      showComments();
+    });
+    
   });
 };
