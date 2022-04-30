@@ -1,3 +1,4 @@
+import '../src/styles/index.css';
 import routes from '../src/router/routes.js';
 const hash = window.location.hash;
 

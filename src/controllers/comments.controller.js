@@ -5,7 +5,7 @@ export default () => {
     JSON.parse(window.localStorage.getItem("comments-instagram-app")) || [];
 
   const root = document.querySelector("#comments");
-  root.innerHTML = '';
+  root.innerHTML = "";
 
   if (localComments.length === 0) return;
 
@@ -14,8 +14,9 @@ export default () => {
     article.classList.add("comment");
     article.innerHTML = comments;
 
-    article.querySelector(".comment__name").textContent = comment.name;
-    article.querySelector(".comment__comment").textContent = comment.text;
+    article.querySelector(
+      ".comment__comment"
+    ).innerHTML = `<span class="comment__name">${comment.name}</span>${comment.text}`;
 
     root.appendChild(article);
   });
