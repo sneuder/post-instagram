@@ -1,9 +1,8 @@
 import comments from "../views/post.comments.html";
 
 export default () => {
-  const localComments = JSON.parse(
-    window.localStorage.getItem("comments-instagram-app")
-  ) || [{ name: "sss", text: "sss" }];
+  const localComments =
+    JSON.parse(window.localStorage.getItem("comments-instagram-app")) || [];
 
   const root = document.querySelector("#comments");
 
