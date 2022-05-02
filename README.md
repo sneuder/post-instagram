@@ -5,11 +5,21 @@ Development of an Instagram post where user has some photos and he or she can ma
 
 ## How to use
 
-- Open terminal
-- Type npm i
-- Type npm start
-- Go to browser and open localhost:9000
+- Open terminal.
+- Type ``npm i``
+- Type ``npm start``
+- Go to browser and open localhost:9000.
 
 ## Deployment
 
 https://instagrampost.surge.sh/
+
+## Features
+
+- Shows three random images.
+- Has swiper.
+- Favorite animation.
+- User can make comments.
+- The profile name and colation is generated randomly.
+- Users' names in comments are random.
+- Responsive.
